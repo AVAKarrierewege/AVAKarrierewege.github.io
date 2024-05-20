@@ -1,0 +1,482 @@
+@charset "utf-8";
+/* CSS Document */
+
+@keyframes drop-in {
+ from {
+  transform: translateY(-110%);
+ }
+ to {
+  transform: translate(0%);
+ }
+}
+
+@keyframes blur {
+ from {
+  opacity: 0;
+ }
+ to {
+  opacity: 1;
+ }
+}
+
+.bg{
+	background-color: #A5B2DC;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.header{
+	position:relative;
+	display: block;
+}
+.container-header{
+	position: relative;
+	display: block;
+  	padding-bottom: 160px;
+}
+.flex-nav{
+	display: inline;
+	display: flex;
+	justify-content: space-around;
+}
+.container-leer1{
+	display: inline;
+	position: relative;
+	flex-grow: 0.6;
+}
+.container-leer2{
+	display: inline;
+	position: relative;
+
+}
+#head {
+	position: absolute;
+	animation: drop-in 1.25s ease backwards;
+	width: 100%;
+}
+#headh {
+	position: absolute;
+	display: none;
+	width: 100%;
+}
+#navh{
+	position: relative;
+	top: 30px;
+	display: inline-block;
+}
+
+#nav2{
+	position: relative;
+	top: 80px;
+	transition: transform .2s;
+	display: inline-block;
+	animation: blur 1200ms ease 400ms backwards;
+}
+.leerh{
+		display: none;
+	}
+#nav2:hover {
+
+  transform: scale(1.25);
+}
+.Titel{
+	position: relative;
+	display: block;
+	text-align: center;
+
+}
+#u1{
+	font-size: 90px;
+	font-family: "Franklin Gothic Heavy";
+	color: #000000;
+}
+.flip-card-contatiner{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	row-gap: 3em; 
+	padding-bottom: 9.3em;	
+}
+.bld1{
+	width: 400px;
+	height: 400px;
+}
+.bld2{
+	width: 400px;
+	height: 400px;
+}
+.bld3{
+	width: 400px;
+	height: 400px;
+}
+.flip-card {
+	position: relative;
+	background-color: transparent;
+	height: 400px;
+	width: 400px;
+	perspective: 1000px;
+	/* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  	transform: rotateY(180deg);
+	box-shadow:
+      0 0 21px #0600ff,
+	  0 0 44px #fff,
+      0 0 92px #fff;
+ 
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+	
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden; /* Safari */
+	backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+	position: absolute;
+  	background-color: #8492D3;
+	margin-right: 150px;
+	border: 10px black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #8492D3;
+  transform: rotateY(180deg);
+}
+
+.flip-card1 {
+	position: relative;
+  	background-color: transparent;
+	height: 400px;
+	width: 400px;
+  	border: 10px #000000;
+  	perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner1 {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card1:hover .flip-card-inner1 {
+  	transform: rotateY(180deg);
+	box-shadow:
+      0 0 21px #0600ff,
+	  0 0 44px #fff,
+      0 0 92px #fff;
+}
+
+/* Position the front and back side */
+.flip-card-front1, .flip-card-back1 {
+  	position: absolute;
+  	width: 100%;
+  	height: 100%;
+  	-webkit-backface-visibility: hidden; /* Safari */
+  	backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front1 {
+	position: absolute;
+  	background-color: #8492D3;
+	margin-right: 150px;
+}
+
+/* Style the back side */
+.flip-card-back1 {
+  	background-color: #8492D3;
+  	transform: rotateY(180deg);
+}
+
+.flip-card2 {
+	position: relative;
+  	background-color: transparent;
+	height: 400px;
+	width: 400px;
+  	border: 10px #000000;
+  	perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner2 {
+  	position: relative;
+  	width: 100%;
+  	height: 100%;
+  	text-align: center;
+  	transition: transform 0.8s;
+  	transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card2:hover .flip-card-inner2 {
+  	transform: rotateY(180deg);
+	box-shadow:
+      0 0 21px #0600ff,
+	  0 0 44px #fff,
+      0 0 92px #fff;
+}
+
+/* Position the front and back side */
+.flip-card-front2, .flip-card-back2 {
+  	position: absolute;
+  	width: 100%;
+  	height: 100%;
+ 	-webkit-backface-visibility: hidden; /* Safari */
+  	backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front2 {
+	position: absolute;
+  	background-color: #8492D3;
+	margin-right: 150px;
+}
+
+/* Style the back side */
+.flip-card-back2 {
+  background-color: #8492D3;
+  transform: rotateY(180deg);
+}
+
+.content-text{
+	align-self: center;
+	width: 87%;
+	position: relative;
+	display: block;
+	font-size: 30px;
+	text-align: justify;
+	padding-bottom: 270px;	
+}
+#text1{
+	position: relative;
+	display: inline-block;
+}
+.text2{
+	font-size: 20px;
+}
+.container-footer{
+	position: relative;
+	display: block;
+	padding-top: -7px;
+	margin-top: -2px;
+}
+.Contatiner-Video{
+	position: relative;
+	display: block;
+}
+#video-bild{
+	width: 100%;
+	height: 100%;
+}
+iframe{
+	width: 51.5%; 
+	height: auto;
+  	aspect-ratio: 16/9;
+}
+#vid{
+	position: absolute;
+	display: inline-block;
+	left: 42%;
+	bottom: 450px;
+}
+.container-footer{
+	position: relative;
+	display: block;
+  	margin-top: -5px;
+}
+#footer-bild{
+	position: absolute;
+	width: 100%;
+	
+}
+.footer-flex{
+	display: flex;
+	justify-content: flex-end;
+}
+.footer-leer{
+	width: 8%;
+}
+#fI{
+	position: relative;
+	display: block;
+	top: 160px;	
+}
+#fD{
+	position: relative;
+	display: block;
+	top: 80px;	
+}
+@media only screen and (max-width: 1629px) {
+	#vid{
+		position: absolute;
+		display: inline-block;
+
+		bottom:450px;
+	}
+}
+@media only screen and (max-width: 1400px) {
+
+	#vid{
+		position: absolute;
+		display: inline-block;
+
+		bottom: 380px;
+	}
+}
+@media only screen and (max-width: 1200px) {
+
+	#vid{
+		position: absolute;
+		display: inline-block;
+
+		bottom: 300px;
+	}
+}
+@media only screen and (max-width: 1000px) {
+	#vid{
+		position: absolute;
+		display: inline-block;
+
+		bottom: 250px;
+	}
+}
+@media only screen and (max-width: 768px) {
+	
+	.text2{
+		font-size: 13px;
+	}
+	#u1{
+		font-size: 60px;
+		font-family: "Franklin Gothic Heavy";
+		color: #000000;
+	}
+	#text1{
+		font-size: 25px;
+		color: #000000;
+	}
+	#vid{
+		position: absolute;
+		display: inline-block;
+
+		bottom: 210px;
+	}
+	#head {
+	position: absolute;
+	display: none;
+	animation: drop-in 1.25s ease backwards;
+	width: 100%;
+}
+	#headh {
+		position: absolute;
+		display: block;
+		animation: drop-in 1.25s ease backwards;
+		width: 100%;
+}
+	.container-leer2{
+		flex-grow: 0.1;
+	}
+	.container-leer1{
+	display: inline;
+	position: relative;
+	flex-grow: 0.2;
+}
+	.leerh{
+		display: block;
+}
+	.flip-card{
+		height: 300px;
+		width: 300px;
+}
+	.flip-card1{
+		height: 300px;
+		width: 300px;
+}
+	.flip-card2{
+		height: 300px;
+		width: 300px;
+}
+	.bld1{
+	width: 300px;
+	height: 300px;
+}
+	.bld2{
+	width: 300px;
+	height: 300px;
+}
+.bld3{
+	width: 300px;
+	height: 300px;
+}
+	#nav2{
+	position: relative;
+	top: 90px;
+	transition: transform .2s;
+	display: inline-block;
+	animation: blur 1200ms ease 400ms backwards;
+}
+}
+@media only screen and (max-width: 650px) {
+#vid{
+		position: absolute;
+		display: inline-block;
+
+		bottom: 170px;
+	}	
+}
+@media only screen and (max-width: 500px) {
+#vid{
+		position: absolute;
+		display: inline-block;
+
+		bottom: 130px;
+	}	
+}
+@media only screen and (max-width: 360px) {
+	#u1{
+		font-size: 50px;
+		font-family: "Franklin Gothic Heavy";
+		color: #000000;		
+}
+	#vid{
+		position: absolute;
+		display: inline-block;
+
+		bottom: 100px;
+	}
+	#headh {
+		position: absolute;
+		display: block;
+		animation: drop-in 1.25s ease backwards;
+		width: 100%;
+		height: 194px;
+}
+	.fcu{
+		font-size: 20pt;
+	}
+}

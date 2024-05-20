@@ -1,0 +1,182 @@
+@charset "utf-8";
+/* CSS Document */
+@keyframes drop-in {
+ from {
+  transform: translateY(-110%);
+ }
+ to {
+  transform: translate(0%);
+ }
+}
+.bg{
+	background-color: #A5B2DC;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.container-header{
+	position: relative;
+	display: block;
+  	padding-bottom: 160px;
+}
+#head {
+	position: absolute;
+	animation: drop-in 1.25s ease backwards;
+	width: 100%;
+}
+#headh {
+	position: absolute;
+	display: none;
+	width: 100%;
+}
+.flex-nav{
+	display: inline;
+	display: flex;
+	justify-content: space-around;
+}
+.leerh{
+	display: none;
+}
+
+#navh{
+	position: relative;
+	top: 30px;
+	display: inline-block;
+}
+.container-leer1{
+	display: inline;
+	position: relative;
+	flex-grow: 0.6;
+}
+
+#nav2{
+	position: relative;
+	top: 80px;
+	transition: transform .2s;
+	display: inline-block;
+}
+#nav2:hover {
+  transform: scale(1.25);
+}
+.Titel{
+	position: relative;
+	display: block;
+	text-align: center;
+
+}
+#u1{
+	font-size: 90px;
+	font-family: "Franklin Gothic Heavy";
+	color: #000000;
+
+}
+.content-text{
+	align-self: center;
+	width: 80%;
+	position: relative;
+	display: block;
+	font-size: 25px;
+	text-align: justify;
+}
+#text1{
+	position: relative;
+	display: inline-block;
+}
+.container-footer{
+	position: relative;
+	display: block;
+	padding-top: 80px;
+}
+#footer-bild{
+	position: absolute;
+	width: 100%;
+}
+#footer-bildh{
+	position: absolute;
+	display: none;
+	width: 100%;
+}
+.footer-flex{
+	display: flex;
+	justify-content: flex-end;
+}
+.footer-leer{
+	width: 8%;
+}
+#fI{
+	position: relative;
+	display: block;
+	top: 240px;
+	}
+#fD{
+	position: relative;
+	display: block;
+	top: 160px;
+	
+}
+
+@media only screen and (max-width: 768px) {
+	#u1{
+		font-size: 60px;
+		font-family: "Franklin Gothic Heavy";
+		color: #000000;
+	}
+	.text2{
+		font-size: 25px;
+		color: #000000;
+	}
+	#head {
+	position: absolute;
+	display: none;
+	animation: drop-in 1.25s ease backwards;
+	width: 100%;
+}
+	#headh {
+		position: absolute;
+		display: block;
+		animation: drop-in 1.25s ease backwards;
+		width: 100%;
+	}
+	#footer-bild{
+	position: absolute;
+	display: none;
+	width: 100%;
+}
+	#footer-bildh{
+	position: absolute;
+	display: block;
+	width: 100%;
+}
+	#fI{
+	position: relative;
+	display: block;
+	top: 220px;
+}
+	#fD{
+	position: relative;
+	display: block;
+	top: 140px;
+}
+	.container-leer2{
+		flex-grow: 0.1;
+	}
+	.container-leer1{
+	display: inline;
+	position: relative;
+	flex-grow: 0.2;
+}
+	.leerh{
+		display: block;
+	}
+}
+@media only screen and (max-width: 350px) {
+	#u1{
+		font-size: 50px;
+		font-family: "Franklin Gothic Heavy";
+		color: #000000;
+	}
+	.text2{
+		font-size: 25px;
+		color: #000000;
+	}
+}
+	
